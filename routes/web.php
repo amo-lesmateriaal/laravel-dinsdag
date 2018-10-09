@@ -18,6 +18,11 @@ Route::get('/', function () {
 Route::get('/me', 'ProfileController@show');
 
 Route::get('/products', 'ProductController@index');
+
+Route::get('/product/create', 'ProductController@create');
+
+Route::post('/product/store', 'ProductController@store')->name('product.store');
+
 Route::get('/product/{id}', 'ProductController@show')->name('product');
 
 /*

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
 
+    // Product::lowQty()
     public static function lowQty() {
         return self::where('quantity', '<', 2)->get();
     }

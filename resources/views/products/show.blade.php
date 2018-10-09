@@ -12,5 +12,6 @@
     <p>{{$product->description}}</p>
     <p>Quantity: {{$product->quantity}}</p>
     <p>Price: {{$product->price}}</p>
+    <p>Category: {{$product->category->name}}</p>
 </body>
 </html>
